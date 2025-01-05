@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebmapper - Move Everywhere</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #005BBB;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #005BBB;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .logo {
+            width: 150px;
+            display: block;
+            margin: 20px auto;
+        }
+        .feature-section {
+            padding: 50px 20px;
+            background-color: #e6f7ff;
+            text-align: center;
+        }
+        .feature {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        .feature h3 {
+            color: #005BBB;
+        }
+        .signup-form {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        .signup-form label {
+            display: block;
+            margin-top: 10px;
+        }
+        .signup-form input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .signup-form input[type="submit"] {
+            background-color: #005BBB;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Lebmapper Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="drivers.html">Drivers</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Move Smart, Move Anywhere with Lebmapper</h2>
+        <p>
+            Lebmapper is dedicated to making transportation accessible, reliable, and affordable for communities across the country. Discover how our smart solutions can help you move wherever you need to go, without the hassle.
+        </p>
+    </div>
+    
+    <div class="feature-section">
+        <h2>Why Choose Lebmapper Daily?</h2>
+        <div class="feature">
+            <h3>Affordable Daily Commutes</h3>
+            <p>Lebmapper provides an affordable way to commute daily, saving you money while offering comfort and reliability. Forget about the hassle of public transport and enjoy a seamless experience with Lebmapper's shared rides.</p>
+        </div>
+        <div class="feature">
+            <h3>Safe and Comfortable</h3>
+            <p>Your safety is our priority. With Lebmapper, travel in well-maintained vehicles with verified drivers who ensure a comfortable and secure journey for you and your fellow passengers.</p>
+        </div>
+        <div class="feature">
+            <h3>Flexible Scheduling</h3>
+            <p>We understand that everyone’s schedule is different. Lebmapper offers flexible timings so you can book your rides according to your personal needs. Get where you need to be, when you need to be there.</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Become a Lebmapper Driver</h2>
+        <p>Join our team of professional drivers and help us move communities forward. Lebmapper drivers enjoy flexible working hours, competitive earnings, and the opportunity to make a positive impact every day.</p>
+        <div class="signup-form">
+            <h3>Sign Up to Drive with Us</h3>
+            <form action="submit_signup.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="vehicle">Vehicle Type:</label>
+                <input type="text" id="vehicle" name="vehicle" required>
+
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Lebmapper. All rights reserved.</p>
+    </footer>
+</body>
+</html>
